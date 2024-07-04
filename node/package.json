@@ -2,7 +2,7 @@
   "name": "resume-be-node",
   "version": "1.0.0",
   "description": "A node microservice for resume site",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "author": "Ben Payne Hunt",
   "license": "MIT",
   "private": false,
