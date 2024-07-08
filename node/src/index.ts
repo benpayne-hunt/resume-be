@@ -2,6 +2,8 @@ import cors from "cors";
 import dotenv from "dotenv";
 import express, { Express, Request, Response } from "express";
 
+import { getSkillsSearchCodeSight } from "./Domains/codeSight/controllers/SkillsSearchController";
+
 dotenv.config();
 
 const app: Express = express();
@@ -16,8 +18,14 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
-app.get("/", cors(corsOptions), (req: Request, res: Response) => {
-  res.send({ ok: true, data: "Express + TypeScript Server" });
+// Routes
+app.get("/", cors(corsOptions), (response: Response) => {
+  response.send({ ok: true, data: "Express + TypeScript Server" });
+});
+
+// Code Sight Routes
+app.get("/code-sight/skills-search", cors(corsOptions), (request: Request, response: Response) => {
+  response.send(getSkillsSearchCodeSight());
 });
 
 app.listen(port, () => {
