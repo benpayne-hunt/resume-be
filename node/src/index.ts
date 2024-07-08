@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import express, { Express, Request, Response } from "express";
 
 import { getSkillsSearchCodeSight } from "./Domains/codeSight/controllers/SkillsSearchController";
+import connect from "./database";
 
 dotenv.config();
 
@@ -17,14 +18,19 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
-// Routes
-app.get("/", cors(corsOptions), (req: Request, res: Response) => {
+// Ping to check if the server is up
+app.get("/ping", cors(corsOptions), (req: Request, res: Response) => {
   res.send({ ok: true, data: "ok" });
+});
+
+// List all databases
+app.get("/databases", cors(corsOptions), (req: Request, res: Response) => {
+  res.send(connect()).status(200);
 });
 
 // Code Sight Routes
 app.get("/code-sight/skills-search", cors(corsOptions), (req: Request, res: Response) => {
-  res.send(getSkillsSearchCodeSight());
+  res.send(getSkillsSearchCodeSight()).status(200);
 });
 
 app.listen(port, () => {
