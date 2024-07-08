@@ -13,19 +13,18 @@ app.use(cors());
 
 const corsOptions = {
   origin: "http://localhost:3000",
-  optionsSuccessStatus: 200,
 };
 
 app.use(cors(corsOptions));
 
 // Routes
-app.get("/", cors(corsOptions), (response: Response) => {
-  response.send({ ok: true, data: "Express + TypeScript Server" });
+app.get("/", cors(corsOptions), (req: Request, res: Response) => {
+  res.send({ ok: true, data: "ok" });
 });
 
 // Code Sight Routes
-app.get("/code-sight/skills-search", cors(corsOptions), (request: Request, response: Response) => {
-  response.send(getSkillsSearchCodeSight());
+app.get("/code-sight/skills-search", cors(corsOptions), (req: Request, res: Response) => {
+  res.send(getSkillsSearchCodeSight());
 });
 
 app.listen(port, () => {
