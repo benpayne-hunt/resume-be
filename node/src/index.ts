@@ -18,14 +18,11 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
+connect();
+
 // Ping to check if the server is up
 app.get("/ping", cors(corsOptions), (req: Request, res: Response) => {
   res.send({ ok: true, data: "ok" });
-});
-
-// List all databases
-app.get("/databases", cors(corsOptions), (req: Request, res: Response) => {
-  res.send(connect()).status(200);
 });
 
 // Code Sight Routes
