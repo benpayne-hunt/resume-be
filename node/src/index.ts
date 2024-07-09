@@ -3,9 +3,8 @@ import dotenv from "dotenv";
 import express, { Express, Request, Response } from "express";
 
 import connect from "./database";
-import { getSkillsSearchCodeSight } from "./domains/codeSight/controllers/skillsSearchController";
+import { getCodeBlock } from "./domains/codeSight/controllers/codeBlockController";
 import { allSkills, findSkill } from "./domains/skills/controllers/findSkillsController";
-import bodyParser from "body-parser";
 
 dotenv.config();
 
@@ -43,10 +42,10 @@ app.post("/skill", cors(corsOptions), async (req: Request, res: Response) => {
 });
 
 /**
- * Code Sight Skills Search
+ * Code Sight Code Block Search
  */
-app.get("/code-sight/skills-search", cors(corsOptions), (req: Request, res: Response) => {
-  res.send(getSkillsSearchCodeSight()).status(200);
+app.post("/code-sight/code-block", cors(corsOptions), async (req: Request, res: Response) => {
+  res.send(await getCodeBlock(req.body.name, req.body.language));
 });
 
 app.listen(port, () => {
