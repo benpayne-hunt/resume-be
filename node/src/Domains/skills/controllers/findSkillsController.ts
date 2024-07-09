@@ -10,7 +10,7 @@ export const allSkills = async () => {
 
 export const findSkill = async (name: string) => {
   try {
-    return await Skill.find({ name: name });
+    return await Skill.find({ name });
   } catch (error: any) {
     throw error;
   }
