@@ -1,10 +1,10 @@
 use crate::db::MainDatabase;
+use crate::models::Skill;
+
 use mongodb::bson::doc;
 use rocket::{futures::TryStreamExt, get, serde::json::Json};
 use rocket_db_pools::Connection;
 use serde_json::{json, Value};
-
-use crate::models::Skill;
 
 #[get("/")]
 pub fn index() -> Json<Value> {
