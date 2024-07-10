@@ -1,0 +1,11 @@
+/Users/ben/Documents/projects/resume-be/rust/target/debug/deps/librocket_db_pools-34c9cf97c09d50ca.rmeta: /Users/ben/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rocket_db_pools-0.2.0/src/lib.rs /Users/ben/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rocket_db_pools-0.2.0/src/database.rs /Users/ben/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rocket_db_pools-0.2.0/src/error.rs /Users/ben/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rocket_db_pools-0.2.0/src/pool.rs /Users/ben/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rocket_db_pools-0.2.0/src/config.rs
+
+/Users/ben/Documents/projects/resume-be/rust/target/debug/deps/librocket_db_pools-34c9cf97c09d50ca.rlib: /Users/ben/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rocket_db_pools-0.2.0/src/lib.rs /Users/ben/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rocket_db_pools-0.2.0/src/database.rs /Users/ben/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rocket_db_pools-0.2.0/src/error.rs /Users/ben/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rocket_db_pools-0.2.0/src/pool.rs /Users/ben/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rocket_db_pools-0.2.0/src/config.rs
+
+/Users/ben/Documents/projects/resume-be/rust/target/debug/deps/rocket_db_pools-34c9cf97c09d50ca.d: /Users/ben/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rocket_db_pools-0.2.0/src/lib.rs /Users/ben/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rocket_db_pools-0.2.0/src/database.rs /Users/ben/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rocket_db_pools-0.2.0/src/error.rs /Users/ben/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rocket_db_pools-0.2.0/src/pool.rs /Users/ben/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rocket_db_pools-0.2.0/src/config.rs
+
+/Users/ben/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rocket_db_pools-0.2.0/src/lib.rs:
+/Users/ben/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rocket_db_pools-0.2.0/src/database.rs:
+/Users/ben/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rocket_db_pools-0.2.0/src/error.rs:
+/Users/ben/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rocket_db_pools-0.2.0/src/pool.rs:
+/Users/ben/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rocket_db_pools-0.2.0/src/config.rs:
